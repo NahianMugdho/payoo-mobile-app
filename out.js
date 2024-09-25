@@ -8,6 +8,10 @@ document.getElementById('bt-out').addEventListener('click',function(event){
 
         // update balance
         document.getElementById('ttl').innerText = total;
+        //add to  history
+        const p = document.createElement('p');
+        p.innerText = `${y} is removed and New balance is ${total}`;
+        document.getElementById('history').appendChild(p)
 
     }
     else{
